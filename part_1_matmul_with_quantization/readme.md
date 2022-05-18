@@ -5,20 +5,5 @@
 最终结果对比要包括误差和计算时间。
 
 摘取一些重点的知识：
-$r$ 表示一个32位浮点实数； $q$ 表示$r$量化后的定点整数。
-
-浮点实数与量化定点整数之间的换算公式为：
-
-$${r = S(q - Z) \choose q = round(r \div S + Z)}$$ 
-
-$S$ 即scale 表示实数范围与整数范围之间的比例； $Z$ 即zero point 实数0量化后的整数
-
-二者来自于：
-
-$${S = r_max - r_min \div q_max - q_min  \choose Z = round(q_max - r_max \div S)}$$
-
-round 舍入操作
-
-在矩阵运算中，量化手段也是类似的，如推文中的推导所示，最后需要
-
-$M = S_1
+![image text](https://github.com/coswindywang/Quantization/blob/main/part_1_matmul_with_quantization/1.png)
+![image text](https://github.com/coswindywang/Quantization/blob/main/part_1_matmul_with_quantization/2.png)
