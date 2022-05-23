@@ -7,3 +7,7 @@
 摘取一些重点的知识：
 ![image text](https://github.com/coswindywang/Quantization/blob/main/part_1_matmul_with_quantization/1.png)
 ![image text](https://github.com/coswindywang/Quantization/blob/main/part_1_matmul_with_quantization/2.png)
+
+但实际复现时存在S3 Z3以及乘之后数据类型搞得比较紊乱（所以参考下面的补充链接重新进行了复现）
+
+补充： [知乎](https://zhuanlan.zhihu.com/p/437857388)
